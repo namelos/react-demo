@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import Head from './Head';
+import Menus from './Menus';
+import Body from './Body';
 import Canvas from '../components/Canvas';
 
 export default class App extends Component {
   render = () => <div>
-    <Head />
-    { this.props.children }
+    <Menus />
+    <Body />
   </div>
 }
+

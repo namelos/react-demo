@@ -43,6 +43,7 @@
     "react-transform-catch-errors": "^1.0.0",
     "react-transform-hmr": "^1.0.0",
     "redbox-react": "^1.0.1",
+    "redux-devtools": "^2.1.5",
     "rimraf": "^2.4.3",
     "webpack": "^1.9.6",
     "webpack-dev-middleware": "^1.2.0",
@@ -50,12 +51,17 @@
   },
   "dependencies": {
     "fbjs": "^0.2.1",
+    "history": "^1.11.1",
     "immutable": "^3.7.5",
+    "isomorphic-fetch": "^2.1.1",
     "material-ui": "^0.12.0",
     "ramda": "^0.17.1",
     "react": "^0.13.0",
     "react-dom": "^0.14.0-rc1",
+    "react-redux": "^3.0.0",
     "react-router": "^1.0.0-rc1",
-    "react-tap-event-plugin": "^0.1.8"
+    "react-tap-event-plugin": "^0.1.8",
+    "redux": "^3.0.2",
+    "redux-router": "^1.0.0-beta3"
   }
 }

@@ -7,5 +7,7 @@ export default class Button extends Component {
 }
 
 const styles = {
-  height: '50px'
+  height: '50px',
+  width: '150px',
+  FontSize: '30px'
 };
