@@ -1,38 +1,21 @@
 import React, { Component } from 'react';
 import { Paper, List, ListItem, ListDivider, } from 'material-ui'
-import Floater from '../components/Floater'
+import Item from '../components/Item';
+import { Link } from 'react-router';
 
 export default class Menus extends Component {
   render = () => <List style={ styles } >
-    <ListItem primaryText="React" />
-    <ListItem primaryText="工具" />
-    <ListItem primaryText="React" />
+    <Link to="/home"><ListItem primaryText="简介" /></Link>
+    <Link to="/jsx"><ListItem primaryText="JSX & ES6" /></Link>
+    <Link to="/home"><ListItem primaryText="工具" /></Link>
     <ListDivider />
-    <ListItem primaryText="中文" />
-    <ListItem primaryText="中文" />
-    <ListItem primaryText="中文" />
-    <ListItem primaryText="中文" />
-    <ListItem primaryText="中文" />
-    <ListItem primaryText="中文" />
-    <ListItem primaryText="中文" />
-    <ListItem primaryText="中文" />
-    <ListItem primaryText="中文" />
-    <ListItem primaryText="中文" />
-    <ListItem primaryText="中文" />
-    <ListItem primaryText="中文" />
-    <ListItem primaryText="中文" />
-    <ListItem primaryText="中文" />
-    <ListItem primaryText="中文" />
-    <ListItem primaryText="中文" />
-    <ListItem primaryText="中文" />
-    <ListItem primaryText="中文" />
+    <Link to="/home"><ListItem primaryText="工具" /></Link>
+    <Link to="/home"><ListItem primaryText="工具" /></Link>
   </List>
 }
 
 const styles = {
-  width: '20%',
   borderStyle: 'solid',
   borderWidth: '1px',
   borderColor: '#DDD',
-  float: 'left'
 };

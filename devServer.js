@@ -13,12 +13,11 @@ app.use(require('webpack-dev-middleware')(compiler, {
 
 app.use(require('webpack-hot-middleware')(compiler));
 
+app.use(express.static('public'));
+
 app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
-
-app.get('/api', (req, res) =>
-  res.send(Date.now().toString()));
 
 app.listen(3000, 'localhost', function(err) {
   if (err) {

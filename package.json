@@ -51,9 +51,12 @@
   },
   "dependencies": {
     "fbjs": "^0.2.1",
+    "github-markdown-css": "^2.0.10",
     "history": "^1.11.1",
     "immutable": "^3.7.5",
     "isomorphic-fetch": "^2.1.1",
+    "jquery": "^2.1.4",
+    "marked": "^0.3.5",
     "material-ui": "^0.12.0",
     "ramda": "^0.17.1",
     "react": "^0.13.0",
