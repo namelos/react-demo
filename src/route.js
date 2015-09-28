@@ -6,7 +6,7 @@ import Immutable from './containers/Immutable';
 import Redux from './containers/Redux';
 import Routing from './containers/Routing';
 
-const route =
+const routes =
   <Router>
     <Route path="/" component={ App } >
       <IndexRoute component={ Home } />
@@ -17,4 +17,4 @@ const route =
     </Route>
   </Router>;
 
-export default route;
+export default routes;
