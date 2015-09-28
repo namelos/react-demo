@@ -8,7 +8,6 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
 
 render(
-    route
-    ,
+    route,
     document.getElementById('root')
 );

@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import HeadBar from '../components/HeadBar';
+import Content from '../components/Content';
 
 export default class Home extends Component {
-  render = () =>
-    <HeadBar />
-} 
+  render = () => <h1>
+    <Content>
+      <h1>Home</h1>
+    </Content>
+  </h1>
+}
