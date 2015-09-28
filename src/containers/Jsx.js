@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import MD from '../components/MD';
+import MD from '../components/md';
 
 export default class Jsx extends Component {
   render = () =>

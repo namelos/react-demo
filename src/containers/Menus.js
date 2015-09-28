@@ -9,8 +9,8 @@ export default class Menus extends Component {
     <Link to="/jsx"><ListItem primaryText="JSX & ES6" /></Link>
     <Link to="/home"><ListItem primaryText="工具" /></Link>
     <ListDivider />
-    <Link to="/home"><ListItem primaryText="工具" /></Link>
-    <Link to="/home"><ListItem primaryText="工具" /></Link>
+    <Link to="/comp"><ListItem primaryText="组件" /></Link>
+
   </List>
 }
 

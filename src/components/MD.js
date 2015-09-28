@@ -11,7 +11,7 @@ export default class MD extends Component {
       $.ajax({
         url: this.props.url,
         dataType: 'text',
-        success: data => {console.log(data); return this.setState({ data })},
+        success: data => this.setState({ data }),
         error: (xhr, status, err) => console.err(this.props.url, status, err.toString())
       });
   createMD = () =>

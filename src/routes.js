@@ -10,6 +10,7 @@ const routes =
       <IndexRoute component={ Home } />
       <Route path="/home" component={ Home } />
       <Route path="/jsx" component={ Jsx } />
+      <Route path="/tools" component={  } />
     </Route>
   </Router>;
 
