@@ -9,6 +9,7 @@ import Styles from './containers/Styles';
 import TopLevel from './containers/TopLevel';
 import CompLevel from './containers/CompLevel';
 import LifeCycle from './containers/LifeCycle';
+import StateAndProps from './containers/StateAndProps';
 
 const routes =
   <Router>
@@ -19,6 +20,7 @@ const routes =
       <Route path="/workflow" component={ Workflow } />
       <Route path="/comp" component={ Comp } />
       <Route path="/styles" component={ Styles } />
+      <Route path="/statenprops" component={ StateAndProps } />
       <Route path="/toplevel" component={ TopLevel } />
       <Route path="/complevel" component={ CompLevel } />
       <Route path="/lifecycle" component={ LifeCycle } />

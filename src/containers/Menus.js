@@ -11,6 +11,7 @@ export default class Menus extends Component {
     <ListDivider />
     <Link to="/comp"><ListItem primaryText="组件" /></Link>
     <Link to="/styles"><ListItem primaryText="样式" /></Link>
+    <ListDivider />
     <Link to="/toplevel"><ListItem primaryText="顶层API" /></Link>
     <Link to="/complevel"><ListItem primaryText="组件API" /></Link>
     <Link to="/lifecycle"><ListItem primaryText="生命周期" /></Link>
