@@ -5,17 +5,16 @@ import { Link } from 'react-router';
 
 export default class Menus extends Component {
   render = () => <List style={ styles } >
-    <Link to="/home"><ListItem primaryText="简介" /></Link>
+    <Link to="/home"><ListItem primaryText="React" /></Link>
     <Link to="/jsx"><ListItem primaryText="JSX & ES6" /></Link>
-    <Link to="/home"><ListItem primaryText="工具" /></Link>
+    <Link to="/workflow"><ListItem primaryText="工作流" /></Link>
     <ListDivider />
     <Link to="/comp"><ListItem primaryText="组件" /></Link>
-
   </List>
 }
 
 const styles = {
   borderStyle: 'solid',
   borderWidth: '1px',
-  borderColor: '#DDD',
+  borderColor: '#DDD'
 };
