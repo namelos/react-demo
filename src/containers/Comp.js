@@ -31,16 +31,50 @@ var Counter2 = React.createClass({
   }
 });
 
+class Like extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { liked: false };
+  }
+  handleClick = e => this.setState({ liked: !this.state.liked });
+  render = () =>
+    <h1 onClick={ this.handleClick } style={ styles.h1 }>
+      You { this.state.liked ? 'like' : 'have\'t liked' }
+      this. Click to toggle.
+    </h1>
+}
+
+class Toggle extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { liked: false };
+  }
+  handleClick = e => this.setState({ liked: !this.state.liked });
+  render = () =>
+      <h1 onClick={ this.handleClick } style={ this.state.liked ? styles.red : styles.green }>
+        Click to toggle
+      </h1>
+}
+
 export default class Comp extends Component {
   render = () =>
   <div>
     <MD url="http://localhost:3000/comp.md" />
     <Counter />
     <Counter2 />
+    <Like />
+    <Toggle />
   </div>
 }
 
 const styles={
-  height: '100px',
-  width: '250px'
+  h1: {
+    fontSize: '30px'
+  },
+  red: {
+    color: 'red'
+  },
+  green: {
+    color: 'green'
+  }
 };
