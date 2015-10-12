@@ -1,6 +1,3 @@
-const timeout = ms =>
-  new Promise((res, rej) =>
-    setTimeout(resolve, ms, 'done'));
+app.get('/', function(req, res) {
 
-timeout(100).then(value =>
-  console.log(value));
+})

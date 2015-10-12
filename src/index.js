@@ -1,4 +1,5 @@
-import React, { Component, render } from 'react';
+import React, { Component } from 'react';
+import { render } from 'react-dom';
 import { Paper, Slider, Tabs, Tab, FlatButton } from 'material-ui';
 import routes from './routes';
 import reset from './utils/normalize';
@@ -6,6 +7,7 @@ import reset from './utils/normalize';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
 import App from './containers/App';
+
 //import $ from 'jquery';
 //
 //import marked from 'marked';

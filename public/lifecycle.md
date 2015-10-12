@@ -1,19 +1,29 @@
-# 生命周期
-## 生命周期是组件的各种方法, 用声明式描述组件行为, 而不是反复使用选择器和语句
-### getInitialState
-```
-getInitialState: function() {
-    return { state: 0 }
-}
-```
-### getDefaultProps
-### mixins
-
-### 生命周期方法
-#### componentWillMount
-#### componentDidMount
-#### componentWillReceiveProps
-#### shouldComponentUpdate
-#### componentWillUpdate
-#### componentDidUpdate
-#### componentWillUnmount
+组件的生命周期
+===
+### 生命周期是组件类方法
+1. 初始化
+  1. getDefaultProps
+    * 只调用一次，所有实例共享（静态）
+  - getInitialState
+    * 为实例定义的状态
+  - componentWillMount
+    * 第一次render前触发
+  - render
+    * 可以访问this.props与this.state
+    * 只允许返回一个JSX元素（可嵌套）
+  - componentDidMount
+    * render加载后触发，可以修改DOM节点
++ 运行中
+  1. componentWillReceiveProps
+    * 父组件修改属性时触发，可以修改属性和状态
+  - shouldComponentUpdate
+    * 返回false会阻止更新
+  - componentWillUpdate
+    * 不能修改属性和状态
+  - render
+    * 同上
+  - componentDidUpdate
+    * 同componentDidMount
++ 销毁
+  1. componentWillUnmount
+    * 销毁前调用

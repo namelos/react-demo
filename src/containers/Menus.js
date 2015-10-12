@@ -6,15 +6,15 @@ import { Link } from 'react-router';
 export default class Menus extends Component {
   render = () => <List style={ styles } >
     <Link to="/home"><ListItem primaryText="React" /></Link>
-    <Link to="/jsx"><ListItem primaryText="JSX & ES6" /></Link>
-    <Link to="/workflow"><ListItem primaryText="工作流" /></Link>
     <ListDivider />
-    <Link to="/comp"><ListItem primaryText="组件" /></Link>
-    <Link to="/styles"><ListItem primaryText="样式" /></Link>
+    <Link to="/es6"><ListItem primaryText="ES6" /></Link>
+    <Link to="/jsx"><ListItem primaryText="JSX" /></Link>
     <ListDivider />
-    <Link to="/toplevel"><ListItem primaryText="顶层API" /></Link>
-    <Link to="/complevel"><ListItem primaryText="组件API" /></Link>
     <Link to="/lifecycle"><ListItem primaryText="生命周期" /></Link>
+    <Link to="/stateandprops"><ListItem primaryText="属性与状态" /></Link>
+    <Link to="/events"><ListItem primaryText="事件" /></Link>
+    <ListDivider />
+    <Link to="/playground"><ListItem primaryText="组件" /></Link>
   </List>
 }
 
