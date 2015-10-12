@@ -14,6 +14,10 @@ var [a, b, c] = [1, 2, 3];
 { foo, bar }
 // 等价于
 { foo: foo, bar: bar }
+
+const state = { foo: 1, bar: 2 },
+const new = { ...state, baz: 3 }
+// new { foo: 1, bar: 2, baz: 3 }
 ```
 
 #### 模块

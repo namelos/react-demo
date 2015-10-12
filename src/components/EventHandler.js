@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Map, List } from 'immutable';
+import Content from './Content';
 
 export default class EventHandler extends Component {
   constructor () {
@@ -14,12 +15,12 @@ export default class EventHandler extends Component {
         data: data.set(type, this.refs[type].value
         )}));
 
-  render = () => <div>
+  render = () => <Content>
     <input type="text" ref="name" />
     <button onClick={ this.handleClick('name') }>name</button>
     <input type="password" ref="pass"/>
     <button onClick={ this.handleClick('pass') }>password</button>
     <p>name: { this.state.data.get('name') }</p>
     <p>password: { this.state.data.get('pass') }</p>
-  </div>
+  </Content>
 }

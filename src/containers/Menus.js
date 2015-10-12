@@ -11,8 +11,8 @@ export default class Menus extends Component {
     <Link to="/jsx"><ListItem primaryText="JSX" /></Link>
     <ListDivider />
     <Link to="/lifecycle"><ListItem primaryText="生命周期" /></Link>
-    <Link to="/stateandprops"><ListItem primaryText="属性与状态" /></Link>
     <Link to="/events"><ListItem primaryText="事件" /></Link>
+    <Link to="/stateandprops"><ListItem primaryText="属性与状态" /></Link>
     <ListDivider />
     <Link to="/playground"><ListItem primaryText="组件" /></Link>
   </List>

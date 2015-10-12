@@ -3,7 +3,7 @@ import Content from '../components/Content';
 import EventHandler from '../components/EventHandler';
 
 export default class Playground extends Component {
-  render = () => <Content>
+  render = () => <h1>
     <EventHandler />
-  </Content>
-} 
+  </h1>
+}
